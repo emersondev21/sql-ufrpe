@@ -55,3 +55,46 @@ CREATE TABLE Fornecedores (
   primary key (FornecedorID)
 )
 ```
+___
+### (slide 27)
+  alterar tabela
+  ```
+  SELECT * FROM Clientes
+  ALTER TABLE Clientes
+  ADD Telefone varchar(15)
+  ```
+___
+### (slide 28)
+  ```
+ALTER TABLE Produtos
+DROP COLUMN NomeProduto;
+
+ALTER TABLE Produtos
+ADD COLUMN DescricaoProduto TEXT;
+  ```
+___
+### (slide 30)
+  ```
+CREATE TABLE Aluno (
+  AlunoID int,
+  NomeAluno varchar(150) not null,
+  DataDeNascimento DATE,
+  Email varchar(100) UNIQUE,
+  Telefone varchar(100),
+  Sexo varchar(50),
+  primary key (AlunoID)
+)
+
+___//___//___//___//___//___//___//___//__
+
+CREATE TABLE Disciplina (
+  DisciplinaID int,
+  NomeDisciplina varchar(150) not null,
+  CargaHoraria varchar(50),
+  primary key (DisciplinaID)
+)
+
+___//___//___//___//___//___//___//___//__
+
+
+  ```
